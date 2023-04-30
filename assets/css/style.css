@@ -1,6 +1,8 @@
 :root {
     --color-dark: midnightblue;
     --color-light: white;
+    max-width: 80em;
+    margin: auto;
 }
 
 p + p {
@@ -45,19 +47,19 @@ header a:focus {
 }
 
 main {
-    padding: 0.5em 1em;
-}
-
-main h2 {
-    color: var(--color-dark);
-    border-bottom: 2px solid var(--color-dark);
+    padding: 0.5em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    margin-bottom: 0.5em;
+    display: contents;
+}
+
+section h2 {
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
 }
 
 .about-contents img {
@@ -87,7 +89,7 @@ section {
 }
 
 .project-list li:nth-child(4n) a {
-    background-color: midnightblue;
+    background-color: royalblue;
 }
 
 .project-list li:nth-child(4n + 1) a {
@@ -95,11 +97,11 @@ section {
 }
 
 .project-list li:nth-child(4n + 2) a {
-    background-color: red;
+    background-color: orangered;
 }
 
 .project-list li:nth-child(4n + 3) a {
-    background-color: plum;
+    background-color: orchid;
 }
 
 .project-card {
@@ -128,4 +130,45 @@ section {
 
 .contact a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 26em) {
+    .contact ul {
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+
+@media (min-width: 36em) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 44em) {
+    header ul {
+        flex-direction: row;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-big {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 66em) {
+    main {
+        grid-template-columns: auto 1fr;
+        justify-content: center;
+    }
+
+    section h2 {
+        border-bottom: 0;
+        border-right: 2px solid var(--color-dark);
+        padding-right: 0.5em;
+    }
 }
