@@ -3,11 +3,31 @@ header {
     color: white;
     display: flex;
     flex-direction: column;
+    padding: 0.5em 1em;
+}
+
+header h1 {
+    flex: 1;
+}
+
+header nav {
+    display: contents;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    display: inline-block;
+    padding: 0.25em 0;
+    color: white;
 }
 
 #about img {
     display: block;
-    margin: auto;
+    margin: 0.5em auto;
     border-radius: 50%;
 }
 
