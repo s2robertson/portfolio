@@ -3,6 +3,10 @@
     --color-light: white;
 }
 
+p + p {
+    margin-top: 0.5em;
+}
+
 header {
     background-color: var(--color-dark);
     color: var(--color-light);
@@ -66,10 +70,4 @@ section {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
 }
