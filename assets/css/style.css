@@ -60,15 +60,9 @@ section {
     margin-bottom: 0.5em;
 }
 
-.about-contents {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-}
-
 .about-contents img {
-    display: block;
-    margin: 0 auto;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
     border-radius: 50%;
 }
 
