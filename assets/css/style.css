@@ -72,6 +72,52 @@ section {
     border-radius: 50%;
 }
 
+.project-list {
+    display: grid;
+    grid-auto-rows: 6em;
+    gap: 0.5em;
+}
+
+.project-list li {
+    display: contents;
+}
+
+.project-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0.5em;
+    min-height: 6em;
+    text-decoration: none;
+}
+
+.project-list li:nth-child(4n) a {
+    background-color: midnightblue;
+}
+
+.project-list li:nth-child(4n + 1) a {
+    background-color: green;
+}
+
+.project-list li:nth-child(4n + 2) a {
+    background-color: red;
+}
+
+.project-list li:nth-child(4n + 3) a {
+    background-color: plum;
+}
+
+.project-card {
+    background-color: lemonchiffon;
+    color: black;
+    padding: 0.25em;
+}
+
+.project-big {
+    grid-row: span 2;
+}
+
 .contact ul {
     display: flex;
     flex-direction: column;
