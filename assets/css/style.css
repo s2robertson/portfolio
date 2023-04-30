@@ -1,6 +1,11 @@
+:root {
+    --color-dark: midnightblue;
+    --color-light: white;
+}
+
 header {
-    background-color: midnightblue;
-    color: white;
+    background-color: var(--color-dark);
+    color: var(--color-light);
     display: flex;
     flex-direction: column;
     padding: 0.5em 1em;
@@ -21,16 +26,50 @@ header ul {
 
 header a {
     display: inline-block;
-    padding: 0.25em 0;
-    color: white;
+    padding: 0.25em;
+    color: var(--color-light);
+    border-radius: 5px;
 }
 
-#about img {
+header a:hover {
+    text-decoration: none;
+}
+
+header a:focus {
+    text-decoration: none;
+    outline: 2px solid var(--color-light);
+}
+
+main {
+    padding: 0.5em 1em;
+}
+
+main h2 {
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.about-contents img {
     display: block;
-    margin: 0.5em auto;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
-#about img::after {
-    content: "This is the after stuff";
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
