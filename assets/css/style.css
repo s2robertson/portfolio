@@ -1,0 +1,16 @@
+header {
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#about img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#about img::after {
+    content: "This is the after stuff";
+}
