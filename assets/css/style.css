@@ -86,6 +86,8 @@ section h2 {
     padding: 0.5em;
     min-height: 12em;
     text-decoration: none;
+    background-position: center;
+    background-size: cover;
 }
 
 .project-list a.project-list-big {
@@ -93,24 +95,39 @@ section h2 {
 }
 
 .project-list-1 {
-    background: url("../images/pexels-tyler-lastovich-699122-sm.jpg") center/cover;
-    background-size: cover;
+    background-image: url("../images/pexels-tyler-lastovich-699122-sm.jpg");
 }
 
-.project-list li:nth-child(4n) a {
-    background-color: royalblue;
+.project-list-2 {
+    background-image: url("../images/pexels-fauxels-3183183-sm.jpg");
 }
 
-.project-list li:nth-child(4n + 1) a {
-    background-color: green;
+.project-list-3 {
+    background-image: url("../images/pexels-fauxels-3184454-sm.jpg");
 }
 
-.project-list li:nth-child(4n + 2) a {
-    background-color: orangered;
+.project-list-4 {
+    background-image: url("../images/pexels-karol-d-841228-sm.jpg");
 }
 
-.project-list li:nth-child(4n + 3) a {
-    background-color: orchid;
+.project-list-5 {
+    background-image: url("../images/pexels-luis-gomes-546819-sm.jpg");
+}
+
+.project-list-6 {
+    background-image: url("../images/pexels-pixabay-265087-sm.jpg");
+}
+
+.project-list-7 {
+    background-image: url("../images/pexels-pixabay-267350-sm.jpg");
+}
+
+.project-list-8 {
+    background-image: url("../images/pexels-pixabay-270348-sm.jpg");
+}
+
+.project-list-9 {
+    background-image: url("../images/pexels-thisisengineering-3861972-sm.jpg");
 }
 
 .project-list-card {
