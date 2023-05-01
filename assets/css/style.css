@@ -15,7 +15,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0.5em 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 header h1 {
@@ -48,7 +48,7 @@ header a:focus {
 }
 
 main {
-    padding: 0.5em 0;
+    padding: 0 1em;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
@@ -65,13 +65,12 @@ section h2 {
 
 .about-contents img {
     float: left;
-    margin: 0 0.5em 0.5em 0;
+    margin: 0 1em 1em 0;
     border-radius: 50%;
 }
 
 .project-list {
     display: grid;
-    grid-auto-rows: 6em;
     gap: 0.5em;
 }
 
@@ -85,8 +84,17 @@ section h2 {
     align-items: start;
     justify-content: center;
     padding: 0.5em;
-    min-height: 6em;
+    min-height: 12em;
     text-decoration: none;
+}
+
+.project-list a.project-list-big {
+    min-height: 24em;
+}
+
+.project-list-1 {
+    background: url("../images/pexels-tyler-lastovich-699122-sm.jpg") center/cover;
+    background-size: cover;
 }
 
 .project-list li:nth-child(4n) a {
@@ -105,14 +113,10 @@ section h2 {
     background-color: orchid;
 }
 
-.project-card {
+.project-list-card {
     background-color: lemonchiffon;
     color: black;
-    padding: 0.25em;
-}
-
-.project-big {
-    grid-row: span 2;
+    padding: 0.5em;
 }
 
 .contact ul {
@@ -145,6 +149,10 @@ section h2 {
         flex-direction: row;
         align-items: center;
     }
+
+    .project-list-1 {
+        background-image: url("../images/pexels-tyler-lastovich-699122-med.jpg");
+    }
 }
 
 @media (min-width: 44em) {
@@ -156,7 +164,7 @@ section h2 {
         grid-template-columns: 1fr 1fr;
     }
 
-    .project-big {
+    .project-list-big {
         grid-column: span 2;
     }
 }
