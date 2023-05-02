@@ -139,15 +139,16 @@ section h2 {
 .contact ul {
     display: flex;
     flex-direction: column;
+    font-size: 1.15em;
 }
 
-.contact li:first-child {
-    margin-bottom: 0.25em;
+.contact .phone::before {
+    content: "\260E";
 }
 
-.contact a {
+.contact .email::before {
     display: inline-block;
-    padding: 0.25em;
+    content: "\1F4E7";
 }
 
 .contact a:hover {
