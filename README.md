@@ -4,10 +4,12 @@
 This repo is meant to act as a landing page to showcase my portfolio of projects, and to act
 as an early entry demonstrating HTML and CSS.  It contains a brief bio, a list of projects, and 
 contact details.  The phone number and email entries are currently artificial; if I add the 
-real details at a later date, it will be behind a captcha.
+real details at a later date, it will be behind a captcha.  A major part of the assignment was 
+to make the page responsive to different sizes using flexbox, grid, and media queries.  I
+chose to adopt a mobile first approach, and made the page scale based on font size.
 
 ## Usage
-N/A
+[See the portfolio live.](https://s2robertson.github.io/portfolio/)
 
 ## Credits
 
@@ -24,3 +26,6 @@ Stock photos used:
 
 ## License
 MIT
+
+## Screenshot
+![A screenshot of the portfolio page](/Portfolio-Screenshot.png)
