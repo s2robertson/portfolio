@@ -1,13 +1,18 @@
+/* These styles are designed to be mobile first--everything starts out
+ * as a single column, and gets expanded by the media queries at the end */
+
 :root {
     --color-dark: midnightblue;
     --color-light: white;
-    max-width: 80em;
+    max-width: 80em; /* This keeps the images in the project list from breaking */
     margin: auto;
 }
 
 p + p {
     margin-top: 0.5em;
 }
+
+/* Header styles */
 
 header {
     background-color: var(--color-dark);
@@ -22,6 +27,7 @@ header h1 {
     flex: 1;
 }
 
+/* The nav element provides semantics, but isn't part of the layout */
 header nav {
     display: contents;
 }
@@ -47,11 +53,15 @@ header a:focus {
     outline: 2px solid var(--color-light);
 }
 
+/* The main section starts out as a single column, but becomes a grid 
+ * once a certain width is reached.  The goal was to get the section
+ * headers to line up when the page is very wide. */
 main {
     padding: 0 1em;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
+    margin-bottom: 2em;
 }
 
 section {
@@ -69,6 +79,7 @@ section h2 {
     border-radius: 50%;
 }
 
+/* The list of projects */
 .project-list {
     display: grid;
     gap: 0.5em;
@@ -78,23 +89,31 @@ section h2 {
     display: contents;
 }
 
+/* There are two goals here: 
+ * 1) There should be a picture (background-image) that is clickable 
+ * 2) The text/info card should be vertically centered. */
 .project-list a {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 0.5em;
+    padding: 1em;
     min-height: 12em;
     text-decoration: none;
     background-position: center;
     background-size: cover;
 }
 
+/* Anything using this will need to use a responsive image (see the media
+ * query section).  I used a class instead of a :first-child selector because 
+ * hypothetically, I might want to have another big list item. */
 .project-list a.project-list-big {
     min-height: 24em;
 }
 
-.project-list-1 {
+/* I used custom classes, rather than :nth-child() in case I ever want to 
+ * re-order the projects.  The images are/will be chosen to suit each project. */
+.project-list-model-phone-system {
     background-image: url("../images/pexels-tyler-lastovich-699122-sm.jpg");
 }
 
@@ -136,16 +155,19 @@ section h2 {
     padding: 0.5em;
 }
 
+/* Contact details */
 .contact ul {
     display: flex;
     flex-direction: column;
     font-size: 1.15em;
 }
 
+/* add a phone icon */
 .contact .phone::before {
     content: "\260E";
 }
 
+/* add a mail icon */
 .contact .email::before {
     display: inline-block;
     content: "\1F4E7";
@@ -155,6 +177,7 @@ section h2 {
     text-decoration: none;
 }
 
+/* The contact details are the first section to change to row orientation */
 @media (min-width: 26em) {
     .contact ul {
         flex-direction: row;
@@ -163,16 +186,20 @@ section h2 {
 }
 
 @media (min-width: 36em) {
+    /* At 36em, the nav links will display alongside the title.
+     * The nav links will still be in a column, though */
     header {
         flex-direction: row;
         align-items: center;
     }
 
-    .project-list-1 {
+    /* Anything with project-list-big will need to change to a larger image */
+    .project-list-model-phone-system {
         background-image: url("../images/pexels-tyler-lastovich-699122-med.jpg");
     }
 }
 
+/* At 44 ems, everything spreads out except section headings */
 @media (min-width: 44em) {
     header ul {
         flex-direction: row;
@@ -187,6 +214,7 @@ section h2 {
     }
 }
 
+/* At 66 ems, the section headings start showing beside, instead of above */
 @media (min-width: 66em) {
     main {
         grid-template-columns: auto 1fr;
