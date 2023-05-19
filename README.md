@@ -15,6 +15,7 @@ chose to adopt a mobile first approach, and made the page scale based on font si
 
 Stock photos used:
 * (https://www.pexels.com/photo/black-iphone-7-on-brown-table-699122/)
+* (https://www.pexels.com/photo/books-on-shelves-2177482/)
 * (https://www.pexels.com/photo/flatlay-display-of-electronics-next-to-eyeglases-3184454/)
 * (https://www.pexels.com/photo/female-software-engineer-coding-on-computer-3861972/)
 * (https://www.pexels.com/photo/close-up-photo-of-programming-of-codes-546819/)
