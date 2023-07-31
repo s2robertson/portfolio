@@ -82,7 +82,7 @@ section h2 {
 /* The list of projects */
 .project-list {
     display: grid;
-    gap: 0.5em;
+    gap: 0.75em;
 }
 
 .project-list li {
@@ -98,17 +98,10 @@ section h2 {
     align-items: start;
     justify-content: center;
     padding: 1em;
-    min-height: 12em;
+    min-height: 14em;
     text-decoration: none;
     background-position: center;
     background-size: cover;
-}
-
-/* Anything using this will need to use a responsive image (see the media
- * query section).  I used a class instead of a :first-child selector because 
- * hypothetically, I might want to have another big list item. */
-.project-list a.project-list-big {
-    min-height: 24em;
 }
 
 /* I used custom classes, rather than :nth-child() in case I ever want to 
@@ -125,28 +118,20 @@ section h2 {
     background-image: url("../images/pexels-pavel-danilyuk-7654579-sm.jpg");
 }
 
-.project-list-4 {
-    background-image: url("../images/pexels-karol-d-841228-sm.jpg");
+.project-list-freelance-platform {
+    background-image: url("../images/pexels-andrea-piacquadio-3760069.jpg");
 }
 
-.project-list-5 {
-    background-image: url("../images/pexels-luis-gomes-546819-sm.jpg");
+.project-list-blog-site {
+    background-image: url("../images/pexels-vlada-karpovich-4050468-sm.jpg");
 }
 
-.project-list-6 {
-    background-image: url("../images/pexels-pixabay-265087-sm.jpg");
+.project-list-weather-dashboard {
+    background-image: url("../images/pexels-brett-sayles-912364-sm.jpg");
 }
 
-.project-list-7 {
-    background-image: url("../images/pexels-pixabay-267350-sm.jpg");
-}
-
-.project-list-8 {
-    background-image: url("../images/pexels-pixabay-270348-sm.jpg");
-}
-
-.project-list-9 {
-    background-image: url("../images/pexels-thisisengineering-3861972-sm.jpg");
+.project-list-quiz-game {
+    background-image: url("../images/pexels-andy-barbour-6683394-sm.jpg");
 }
 
 .project-list-card {
@@ -207,6 +192,13 @@ section h2 {
 
     .project-list {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Anything using this will need to use a responsive image (see .project-list-model-phone-system above).
+     * I used a class instead of a :first-child selector because hypothetically, I might want to have another
+     * big list item. */
+    .project-list a.project-list-big {
+        min-height: 28em;
     }
 
     .project-list-big {
