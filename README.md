@@ -36,4 +36,4 @@ Stock photos from previous versions:
 MIT
 
 ## Screenshot
-![A screenshot of the portfolio page](/Portfolio-Screenshot.png)
+![A screenshot of the portfolio page](./Portfolio-Screenshot.png)
