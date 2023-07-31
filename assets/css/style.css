@@ -85,14 +85,10 @@ section h2 {
     gap: 0.75em;
 }
 
-.project-list li {
-    display: contents;
-}
-
 /* There are two goals here: 
- * 1) There should be a picture (background-image) that is clickable 
+ * 1) There should be a picture (background-image)
  * 2) The text/info card should be vertically centered. */
-.project-list a {
+.project-list li {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -197,7 +193,7 @@ section h2 {
     /* Anything using this will need to use a responsive image (see .project-list-model-phone-system above).
      * I used a class instead of a :first-child selector because hypothetically, I might want to have another
      * big list item. */
-    .project-list a.project-list-big {
+    .project-list li.project-list-big {
         min-height: 28em;
     }
 
